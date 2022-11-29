@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#f-list1:hover li{ visibility: visible;}
+#ul-list1:hover li {visibility:hidden;}
+/* .invisable:hover { visibility: visible;} */
+#span1:hover li {visibility: visible;}

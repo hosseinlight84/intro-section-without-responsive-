@@ -1,8 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-#f-list1:hover li{ visibility: visible;}
-#ul-list1:hover li {visibility:hidden;}
-/* .invisable:hover { visibility: visible;} */
-#span1:hover li {visibility: visible;}
+/*---------------------drop down menu for features------------------*/
+#span1 {opacity:0;display:none;}
+#f-list1:hover span {display: block;opacity: 1;}
+#f-list1:hover svg {transform:rotate(180deg);transition: all 0.5s ease-in-out;}
+#div1 {display:none;position: fixed;}
+#f-list1:hover div {display: block;}
+#f-list1:hover div span ul li {visibility: visible;}
+/*---------------------end of dropdown menu features------------------*/
+/*---------------------drop down menu for compony------------------*/
+#div2 {display: none;position: fixed;}
+#compony:hover ul div { display: block; }
+#compony:hover ul div li {visibility: visible;}
+#compony:hover svg {transform:rotate(180deg);transition: all 0.5s ease-in-out;}
+/*---------------------end of dropdown menu company------------------*/
+/* <!----------------------------------------------------------- end of header -------------------------------------------> */

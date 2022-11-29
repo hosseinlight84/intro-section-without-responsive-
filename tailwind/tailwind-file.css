@@ -513,24 +513,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .invisible {
   visibility: hidden;
-}
-
-.collapse {
-  visibility: collapse;
-}
-
-.relative {
-  position: relative;
-}
-
-.sticky {
-  position: sticky;
 }
 
 .float-right {
@@ -549,6 +533,11 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mt-4 {
@@ -591,44 +580,24 @@ video {
   margin-left: 4rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
-.block {
-  display: block;
+.mr-28 {
+  margin-right: 7rem;
 }
 
 .flex {
   display: flex;
 }
 
-.table {
-  display: table;
+.h-1\/3 {
+  height: 33.333333%;
 }
 
-.contents {
-  display: contents;
-}
-
-.hidden {
-  display: none;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.border-collapse {
-  border-collapse: collapse;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.resize {
-  resize: both;
+.w-1\/3 {
+  width: 33.333333%;
 }
 
 .flex-row {
@@ -643,31 +612,13 @@ video {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-cyan-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
-}
-
-.via-black {
-  --tw-gradient-to: rgb(0 0 0 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), #000, var(--tw-gradient-to);
-}
-
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .text-4xl {
@@ -693,38 +644,58 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
+/*---------------------drop down menu for features------------------*/
+
+#span1 {
+  opacity:0;
+  display:none;
 }
 
-.outline {
-  outline-style: solid;
+#f-list1:hover span {
+  display: block;
+  opacity: 1;
 }
 
-.drop-shadow-xl {
-  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+#f-list1:hover svg {
+  transform:rotate(180deg);
+  transition: all 0.5s ease-in-out;
 }
 
-.drop-shadow {
-  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+#div1 {
+  display:none;
+  position: fixed;
 }
 
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+#f-list1:hover div {
+  display: block;
 }
 
-#f-list1:hover li{
+#f-list1:hover div span ul li {
   visibility: visible;
 }
 
-#ul-list1:hover li {
-  visibility:hidden;
+/*---------------------end of dropdown menu features------------------*/
+
+/*---------------------drop down menu for compony------------------*/
+
+#div2 {
+  display: none;
+  position: fixed;
 }
 
-/* .invisable:hover { visibility: visible;} */
+#compony:hover ul div {
+  display: block;
+}
 
-#span1:hover li {
+#compony:hover ul div li {
   visibility: visible;
 }
+
+#compony:hover svg {
+  transform:rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+
+/*---------------------end of dropdown menu company------------------*/
+
+/* <!----------------------------------------------------------- end of header -------------------------------------------> */
